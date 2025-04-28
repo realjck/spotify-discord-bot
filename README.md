@@ -36,3 +36,11 @@ docker build -t spotify-bot .
 # Run the container
 docker run -d --restart always --env-file .env --name spotify-bot spotify-bot
 ```
+
+## Authorizations in Discord Developer portal 🔐
+
+Choose your app, then go to `OAuth2`, then go to the section OAuth2 URL Generator
+- In scopes, check `bot`
+- Then, below and under Texts Permission, check `Send Messages`.
+
+You can then generate the invite link for your bot.
